@@ -38,7 +38,7 @@ def checkin(email=os.environ.get('EMAIL'), password=os.environ.get('PASSWORD'),
 
 
 result = checkin()
-if SCKEY != '':
+if SCKEY != '': 
     sendurl = 'https://sctapi.ftqq.com/' + SCKEY + '.send?title=v2free机场签到&desp=' + result
     r = requests.get(url=sendurl)
 if TG_USER_ID != '':
