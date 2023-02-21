@@ -28,7 +28,7 @@ def checkin(email=os.environ.get('EMAIL'), password=os.environ.get('PASSWORD'),
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) '
                       'AppleWebKit/537.36 (KHTML, like Gecko) '
                       'Chrome/56.0.2924.87 Safari/537.36',
-        'Referer': base_url + '/user'
+        'Referer': base_url + '/user' 
     }
     response = session.post(base_url + '/user/checkin', headers=headers,
                             verify=False)
